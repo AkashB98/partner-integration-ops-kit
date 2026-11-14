@@ -1,0 +1,398 @@
+{
+  "as_of": "2026-11-14",
+  "changelog": [
+    {
+      "change_type": "field_removed",
+      "field": "metadata_note",
+      "id": "C01",
+      "partner_id": "northwind-pay",
+      "truth": "breaking"
+    },
+    {
+      "change_type": "type_changed",
+      "field": "amount_cents",
+      "id": "C02",
+      "new_type": "string",
+      "old_type": "integer",
+      "partner_id": "northwind-pay",
+      "truth": "breaking"
+    },
+    {
+      "change_type": "field_added",
+      "field": "consent_scope",
+      "id": "C03",
+      "new_required": true,
+      "new_type": "string",
+      "partner_id": "helio-health",
+      "truth": "breaking"
+    },
+    {
+      "change_type": "requirement_changed",
+      "field": "clinic_code",
+      "id": "C04",
+      "new_required": true,
+      "old_required": false,
+      "partner_id": "helio-health",
+      "truth": "breaking"
+    },
+    {
+      "change_type": "enum_value_removed",
+      "field": "priority",
+      "id": "C05",
+      "partner_id": "cobalt-logistics",
+      "removed_value": "express",
+      "truth": "breaking"
+    },
+    {
+      "change_type": "field_renamed",
+      "field": "weight_grams",
+      "id": "C06",
+      "new_field": "weight_g",
+      "partner_id": "cobalt-logistics",
+      "truth": "breaking"
+    },
+    {
+      "change_type": "field_removed",
+      "field": "discount_code",
+      "id": "C07",
+      "partner_id": "fern-retail",
+      "truth": "breaking"
+    },
+    {
+      "change_type": "type_changed",
+      "field": "channel",
+      "id": "C08",
+      "new_type": "string",
+      "old_type": "enum",
+      "partner_id": "fern-retail",
+      "truth": "breaking"
+    },
+    {
+      "change_type": "field_added",
+      "field": "idempotency_key",
+      "id": "C09",
+      "new_required": true,
+      "new_type": "string",
+      "partner_id": "northwind-pay",
+      "truth": "breaking"
+    },
+    {
+      "change_type": "requirement_changed",
+      "field": "patient_ref",
+      "id": "C10",
+      "new_required": true,
+      "old_required": false,
+      "partner_id": "helio-health",
+      "truth": "breaking"
+    },
+    {
+      "change_type": "type_changed",
+      "field": "shipment_id",
+      "id": "C11",
+      "new_type": "integer",
+      "old_type": "string",
+      "partner_id": "cobalt-logistics",
+      "truth": "breaking"
+    },
+    {
+      "change_type": "description_changed",
+      "field": "amount_cents",
+      "id": "C12",
+      "new_description": "Charge amount in dollars.",
+      "old_description": "Charge amount in cents.",
+      "partner_id": "northwind-pay",
+      "truth": "breaking"
+    },
+    {
+      "change_type": "field_added",
+      "field": "receipt_locale",
+      "id": "C13",
+      "new_required": false,
+      "new_type": "string",
+      "partner_id": "northwind-pay",
+      "truth": "non-breaking"
+    },
+    {
+      "change_type": "description_changed",
+      "field": "clinic_code",
+      "id": "C14",
+      "new_description": "Clinic identifier (site code).",
+      "old_description": "Clinic identifier.",
+      "partner_id": "helio-health",
+      "truth": "non-breaking"
+    },
+    {
+      "change_type": "requirement_changed",
+      "field": "carrier_note",
+      "id": "C15",
+      "new_required": false,
+      "old_required": true,
+      "partner_id": "cobalt-logistics",
+      "truth": "non-breaking"
+    },
+    {
+      "added_value": "kiosk",
+      "change_type": "enum_value_added",
+      "field": "channel",
+      "id": "C16",
+      "partner_id": "fern-retail",
+      "truth": "non-breaking"
+    },
+    {
+      "change_type": "field_added",
+      "field": "gift_wrap",
+      "id": "C17",
+      "new_required": false,
+      "new_type": "boolean",
+      "partner_id": "fern-retail",
+      "truth": "non-breaking"
+    },
+    {
+      "change_type": "description_changed",
+      "field": "customer_email",
+      "id": "C18",
+      "new_description": "Receipt email address.",
+      "old_description": "Receipt email.",
+      "partner_id": "northwind-pay",
+      "truth": "non-breaking"
+    },
+    {
+      "added_value": "overnight",
+      "change_type": "enum_value_added",
+      "field": "priority",
+      "id": "C19",
+      "partner_id": "helio-health",
+      "truth": "non-breaking"
+    },
+    {
+      "change_type": "requirement_changed",
+      "field": "priority",
+      "id": "C20",
+      "new_required": false,
+      "old_required": true,
+      "partner_id": "cobalt-logistics",
+      "truth": "non-breaking"
+    },
+    {
+      "change_type": "field_added",
+      "field": "loyalty_id",
+      "id": "C21",
+      "new_required": false,
+      "new_type": "string",
+      "partner_id": "fern-retail",
+      "truth": "non-breaking"
+    },
+    {
+      "change_type": "description_changed",
+      "field": "appointment_at",
+      "id": "C22",
+      "new_description": "ISO 8601 appointment start time (UTC).",
+      "old_description": "ISO 8601 appointment time.",
+      "partner_id": "helio-health",
+      "truth": "non-breaking"
+    },
+    {
+      "added_value": "refunded",
+      "change_type": "enum_value_added",
+      "field": "status",
+      "id": "C23",
+      "partner_id": "northwind-pay",
+      "truth": "non-breaking"
+    },
+    {
+      "change_type": "type_changed",
+      "field": "weight_grams",
+      "id": "C24",
+      "new_type": "number",
+      "old_type": "integer",
+      "partner_id": "cobalt-logistics",
+      "truth": "non-breaking"
+    }
+  ],
+  "contracts": {
+    "cobalt-logistics": {
+      "fields": {
+        "carrier_note": {
+          "description": "Carrier note.",
+          "required": false,
+          "type": "string"
+        },
+        "priority": {
+          "description": "One of: standard, express.",
+          "required": false,
+          "type": "enum"
+        },
+        "shipment_id": {
+          "description": "Shipment identifier.",
+          "required": true,
+          "type": "string"
+        },
+        "weight_grams": {
+          "description": "Weight in grams.",
+          "required": true,
+          "type": "integer"
+        }
+      }
+    },
+    "fern-retail": {
+      "fields": {
+        "channel": {
+          "description": "One of: web, store.",
+          "required": true,
+          "type": "enum"
+        },
+        "discount_code": {
+          "description": "Optional discount code.",
+          "required": false,
+          "type": "string"
+        },
+        "order_id": {
+          "description": "Order identifier.",
+          "required": true,
+          "type": "string"
+        },
+        "total_price": {
+          "description": "Order total.",
+          "required": true,
+          "type": "number"
+        }
+      }
+    },
+    "helio-health": {
+      "fields": {
+        "appointment_at": {
+          "description": "ISO 8601 appointment time.",
+          "required": true,
+          "type": "string"
+        },
+        "clinic_code": {
+          "description": "Clinic identifier.",
+          "required": false,
+          "type": "string"
+        },
+        "consent_flag": {
+          "description": "Consent recorded.",
+          "required": true,
+          "type": "boolean"
+        },
+        "patient_ref": {
+          "description": "Opaque patient reference.",
+          "required": true,
+          "type": "string"
+        }
+      }
+    },
+    "northwind-pay": {
+      "fields": {
+        "amount_cents": {
+          "description": "Charge amount in cents.",
+          "required": true,
+          "type": "integer"
+        },
+        "currency": {
+          "description": "ISO 4217 currency code.",
+          "required": true,
+          "type": "string"
+        },
+        "customer_email": {
+          "description": "Receipt email.",
+          "required": false,
+          "type": "string"
+        },
+        "metadata_note": {
+          "description": "Free-text note.",
+          "required": false,
+          "type": "string"
+        },
+        "status": {
+          "description": "One of: pending, settled, failed.",
+          "required": true,
+          "type": "enum"
+        }
+      }
+    }
+  },
+  "credentials": [
+    {
+      "expires_on": "2026-11-10",
+      "id": "K01",
+      "kind": "certificate",
+      "label": "Northwind TLS cert",
+      "partner_id": "northwind-pay"
+    },
+    {
+      "expires_on": "2026-11-14",
+      "id": "K02",
+      "kind": "api_key",
+      "label": "Northwind prod API key",
+      "partner_id": "northwind-pay"
+    },
+    {
+      "expires_on": "2026-11-18",
+      "id": "K03",
+      "kind": "certificate",
+      "label": "Helio mTLS cert",
+      "partner_id": "helio-health"
+    },
+    {
+      "expires_on": "2026-11-25",
+      "id": "K04",
+      "kind": "oauth_secret",
+      "label": "Helio OAuth secret",
+      "partner_id": "helio-health"
+    },
+    {
+      "expires_on": "2026-12-05",
+      "id": "K05",
+      "kind": "api_key",
+      "label": "Cobalt webhook signing key",
+      "partner_id": "cobalt-logistics"
+    },
+    {
+      "expires_on": "2026-12-30",
+      "id": "K06",
+      "kind": "certificate",
+      "label": "Cobalt client cert",
+      "partner_id": "cobalt-logistics"
+    },
+    {
+      "expires_on": "2027-01-15",
+      "id": "K07",
+      "kind": "api_key",
+      "label": "Fern catalogue API key",
+      "partner_id": "fern-retail"
+    },
+    {
+      "expires_on": "2027-03-01",
+      "id": "K08",
+      "kind": "certificate",
+      "label": "Fern TLS cert",
+      "partner_id": "fern-retail"
+    },
+    {
+      "expires_on": "2027-06-01",
+      "id": "K09",
+      "kind": "oauth_secret",
+      "label": "Northwind OAuth secret",
+      "partner_id": "northwind-pay"
+    }
+  ],
+  "partners": [
+    {
+      "name": "Northwind Pay",
+      "partner_id": "northwind-pay"
+    },
+    {
+      "name": "Helio Health",
+      "partner_id": "helio-health"
+    },
+    {
+      "name": "Cobalt Logistics",
+      "partner_id": "cobalt-logistics"
+    },
+    {
+      "name": "Fern Retail",
+      "partner_id": "fern-retail"
+    }
+  ]
+}
